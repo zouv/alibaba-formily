@@ -12,6 +12,7 @@
     "build": "rimraf -rf packages/*/{lib,dist,esm} && lerna run build",
     "build:docs": "dumi build",
     "start": "dumi dev",
+    "start_l": "set NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
     "test": "jest --coverage",
     "test:reactive": "jest packages/reactive/",
     "test:validator": "jest packages/validator/",
